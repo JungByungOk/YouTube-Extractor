@@ -11,6 +11,19 @@ MyClient.Encoding = Encoding.UTF8;
 bool ExtractResult = await Extractor.GetVideoAsync(MyClient, "https://www.youtube.com/watch?v=yVLfEHXQk08");
 
 ```
+
+# For load video with proxy
+```c#
+YouTubeExtractor.Extractor Extractor = new YouTubeExtractor.Extractor();
+
+var MyClient = new WebClient();
+MyClient.Proxy = new WebProxy("IP",0000);
+MyClient.Encoding = Encoding.UTF8;
+
+bool ExtractResult = await Extractor.GetVideoAsync(MyClient, "https://www.youtube.com/watch?v=yVLfEHXQk08");
+
+```
+
 # For get video info
 ```c#
 if(ExtractResult)
@@ -24,6 +37,7 @@ Console.WriteLine("Channel : " + videoInfo.Channel); //Clash of Clans
 }
 
 ```
+
 # For get video download link
 ```c#
 if(ExtractResult)
