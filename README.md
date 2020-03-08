@@ -1,7 +1,7 @@
 # YouTube-Extractor
 This is a library for get inf and URLs from a YouTube video
 
-#For load video
+# For load video
 ```c#
 YouTubeExtractor.Extractor Extractor = new YouTubeExtractor.Extractor();
 
@@ -11,7 +11,7 @@ MyClient.Encoding = Encoding.UTF8;
 bool ExtractResult = await Extractor.GetVideoAsync(MyClient, "https://www.youtube.com/watch?v=yVLfEHXQk08");
 
 ```
-#For get video info
+# For get video info
 ```c#
 if(ExtractResult)
 {
@@ -24,7 +24,7 @@ Console.WriteLine("Channel : " + videoInfo.Channel); //Clash of Clans
 }
 
 ```
-#For get video download link
+# For get video download link
 ```c#
 if(ExtractResult)
 {
@@ -35,5 +35,6 @@ Console.WriteLine(i.Quality); // medium and hd720
 Console.WriteLine(i.URL); // https://r5---sn-ab5l6nzd.googlevideo.com/........
 }
 }
-
 ```
+[My telegram username :](https://t.me/Iam_vinak)
+[Telegram channel :](https://t.me/ModernSoftCompany)
